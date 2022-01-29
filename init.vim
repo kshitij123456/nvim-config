@@ -3,6 +3,7 @@
 
 set nocompatible
 set number
+set tabstop=4
 filetype off
 
 call plug#begin('~/.config/nvim/plugged')
@@ -15,11 +16,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mhinz/vim-startify'
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 colorscheme gruvbox
 map <silent> <C-n> :NERDTreeFocus<CR>
-
 
 " Sourcing various vim files
 source $HOME/.config/nvim/themes/airline.vim
